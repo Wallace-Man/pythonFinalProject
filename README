@@ -1,0 +1,14 @@
+STEPS FOR THOSE TRYING TO RUN THIS ON MAC
+1. Run the Installation.py
+2. This will open a window called NLTK Downloader
+3. Near the top of the downloader, go to 'All Packages'
+4. Scroll through and download omw-1.4 (Open Multilingual Wordnet), punkt (Punkt Tokenizer Models), stopwords (Stopwords Corpus), wordnet (WordNet)
+5. After everything has downloaded, close the downloader
+6. Run the main.py for the search engine with WordNet OR run the main2.py for the search engine without WordNet
+*PSA: This is a workaround for macOS because you will get certificate errors. After you follow the steps above, the program should be working as intended
+even if you get [nltk-data] errors.
+
+
+STEPS FOR THOSE TRYING TO RUN THIS ON WINDOWS
+1. You can run main.py for the search engine with WordNet OR run main2.py for the search engine without WordNet
+*PSA: If the program crashes after entering a query into the GUI, follow the steps for running this in macOS above.

@@ -72,7 +72,6 @@ def ratingRefinement(tokens):
     score = score / len(tokens)
 
 
-# Creates the histogram and return the plot to the canvas
 def plot():
     global text
     global top_results
@@ -86,8 +85,8 @@ def plot():
 
     # Top 10 terms
     n = 10
-    counts = dict(Counter(tokens_without_sw).most_common(n))    # Sort through the most common terms
-    top_results = sorted(counts, key=lambda x: (-counts[x], x))     # Sorts the top results for the graph's labels
+    counts = dict(Counter(tokens_without_sw).most_common(n))
+    top_results = sorted(counts, key=lambda x: (-counts[x], x))
     counts = {val[0]: val[1] for val in sorted(counts.items(), key=lambda x: (-x[1], x[0]))}
 
     labels = top_results    # Labels the graph with terms

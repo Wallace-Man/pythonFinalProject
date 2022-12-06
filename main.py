@@ -1,3 +1,3 @@
-import nltk
+from GUI import GUI
 
-nltk.download()
+GUI()
