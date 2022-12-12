@@ -11,7 +11,7 @@ global values
 
 
 # Draws the histogram onto the Canvas
-def draw_figure_on_canvas(canvas, figure):
+def drawFigureOnCanvas(canvas, figure):
     figure_canvas_agg = FigureCanvasTkAgg(figure, canvas)
     figure_canvas_agg.draw()
     figure_canvas_agg.get_tk_widget().pack(side='top', fill='both', expand=1)
@@ -19,7 +19,7 @@ def draw_figure_on_canvas(canvas, figure):
 
 
 # Deletes the histogram to replace it with a new one
-def delete_fig_agg(fig_agg):
+def deleteFigAgg(fig_agg):
     fig_agg.get_tk_widget().forget()
     plt.close('all')
 
@@ -89,8 +89,8 @@ def GUI():
             window['Textbox'].update(search(values['Query']), visible=True)
             window['Histogram_Text'].update(visible=True)
             if fig_agg is not None:
-                delete_fig_agg(fig_agg)
-            fig_agg = draw_figure_on_canvas(window['Canvas'].TKCanvas, plot())  # Draws the histogram to the canvas
+                deleteFigAgg(fig_agg)
+            fig_agg = drawFigureOnCanvas(window['Canvas'].TKCanvas, plot())  # Draws the histogram to the canvas
             top = returnTopResult()
 
             for x in range(0, 10, 1):   # Creates and updates the buttons for adding terms to the query
