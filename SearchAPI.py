@@ -46,7 +46,7 @@ def search(query):
     links = soup_link.find_all("a")
     n = 1
 
-    for link in links:  # Finds all of the links within the HTML
+    for link in links:  # Finds all the links within the HTML
         link_href = link.get('href')
         if "url?q=" in link_href and not "webcache" in link_href:
             title = link.find_all('h3')

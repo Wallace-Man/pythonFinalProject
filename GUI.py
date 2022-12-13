@@ -113,6 +113,7 @@ def GUI():
     # Create the Window
     window = sg.Window('Project', layout)
     # Event Loop to process "events" and get the "values" of the inputs
+    global fig_agg
     fig_agg = None
     while True:
         global top_results
