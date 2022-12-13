@@ -6,6 +6,6 @@ STEPS FOR THOSE TRYING TO RUN THIS
 5. After everything has downloaded, close the downloader
 6. Run the main.py for the search engine with WordNet OR run the main2.py for the search engine without WordNet
 
-7. This step might be optional. You might need to install the modules for whatever IDE you are trying to run this on like matplotlib
+7. This step might be optional. You might need to install the modules for whatever IDE you are trying to run this on like matplotlib, etc.
 
 *PSA: If you are trying to run this on macOS. This is a workaround for macOS because you will get certificate errors. After you follow the steps above, the program should be working as intended even if you get [nltk-data] errors.
